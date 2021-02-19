@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    beamng-bot-1:
+      image: beamng-bot:latest
+      restart: always
+      environment:
+        - token=
+        - ip=127.0.0.1
+        - port=30814
