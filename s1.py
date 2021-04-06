@@ -33,7 +33,7 @@ class LivePlayercountBot(discord.Client):
  
 async def get_playercount(session):
     try:
-        url = "https://beamng-mp.com/servers-info"
+        url = "https://backend.beammp.com/servers-info"
         async with session.get(url) as r:
             page = await r.json()
             for i in range(len(page)):
